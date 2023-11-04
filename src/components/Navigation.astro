@@ -1,7 +1,87 @@
----
----
-<div class="nav-links">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
-</div>
+<nav class="header">
+  <img src="/img/Logo.png" alt="Logo" class="logo" />
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</nav>
+
+<script src="../scripts/menu.js"></script>
+
+<style>
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px; /* Adjust margin between logo and nav elements */
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust the gap between navigation links */
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    padding-right: 40px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 20px; /* Adjust padding for each link */
+    transition: all 0.3s ease;
+    transform-origin: center; /* Set the transform origin to the center */
+    display: inline-block; /* Ensures the anchor tags behave like block elements */
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #ccc; /* Hover background color */
+    transform: scale(1.2); /* Example transform: increase scale on hover */
+  }
+
+  /*                */
+  /* Hamburger menu */
+  /*                */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav-links {
+      /* Technically handled in menu.js but without this, when reloaded, it will display in flex instead of none */
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
