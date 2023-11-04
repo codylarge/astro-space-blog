@@ -1,19 +1,30 @@
 ---
 // const platform = "github";
 // const username = "withastro";
-import Social from './Social.astro';
+import Social from "./Social.astro";
 ---
+
+<footer>
+  <Social platform="twitter" username="neiltyson" />
+  <Social platform="github" username="codylarge" />
+  <Social platform="youtube" username="watch?v=xvFZjo5PgG0" />
+</footer>
 
 <style>
   footer {
-    display: flex;
+    background-color: #e6e6e61f;
+    padding: 30px;
+    text-align: center;
+    display: block;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer {
+      padding-inline: 0px;
+      background: none;
+      border: none;
+    }
   }
 </style>
-
-<footer>
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
-</footer>

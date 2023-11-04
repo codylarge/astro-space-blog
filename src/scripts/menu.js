@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function () // Display nav links when hamburger is clicked
     {
       if (navLinks.style.display === "block") {
-        navLinks.style.display = "none";
+        navLinks.style.display = "none"; // Toggle off
       } else {
-        navLinks.style.display = "block";
+        navLinks.style.display = "block"; // Toggle on
       }
     }
   );
