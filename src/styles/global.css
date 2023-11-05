@@ -3,7 +3,8 @@
 
 
 html {
-  background-image: url('/img/space-background-no-middle.webp');
+  background-color: black;
+  background-image: url('/public/space-background-no-middle.webp');
   background-size: cover; /* Ensure the background covers the entire element */
   background-position: center; /* Center the background image */
   font-family: Arial, Helvetica, sans-serif;
@@ -37,9 +38,7 @@ h2 {
   font-family: 'Rubik Mono One', monospace;
 }
 
-a{
-  text-decoration: none;
-}
+
 
 p {
   text-shadow: 1px 1px 1px black;
@@ -48,17 +47,29 @@ p {
 }
 
 
-/* These arent working in the file for some reason */
+/* BLOG STYLES (they arent working in the file for some reason) */
+a{
+  text-decoration: none;
+  color :rgb(252, 216, 255);
+}
+
+a:hover{
+  color: purple;
+}
+
 .post-thumbnail {
   width: 600px;
   height: auto;
-  border: 1px solid rgb(252, 216, 255);
+  border: 2px solid rgba(252, 216, 255, .3);
+  border-radius: 5px;
   transition: transform 0.1s ease-in-out;
 }
 
 .post-thumbnail:hover {
   transform: scale(1.1);
+  box-shadow: 2px 15px 15px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 @media screen and (max-width: 700px) {
   .post-thumbnail {
