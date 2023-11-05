@@ -3,7 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
-const pageTitle = "📕 Blog";
+const pageTitle = "🌌 Blog 🌠";
 ---
 
 <html lang="en">
@@ -13,14 +13,20 @@ const pageTitle = "📕 Blog";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+
+    <style>
+      h1 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+    </style>
   </head>
   <body>
     <Header />
 
     <h1>{pageTitle}</h1>
-    <p>This is the start of blog about stuff.</p>
 
-    <ul id="postList"></ul>
+    <ul id="post-list"></ul>
 
     <Footer />
     <script src="../scripts/blogPosts.js"></script>

@@ -33,8 +33,36 @@ h1 {
   padding: 2%;
 }
 
+h2 {
+  font-family: 'Rubik Mono One', monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
 p {
   text-shadow: 1px 1px 1px black;
   font-size: 20px;
   line-height: 200%;
+}
+
+
+/* These arent working in the file for some reason */
+.post-thumbnail {
+  width: 600px;
+  height: auto;
+  border: 1px solid rgb(252, 216, 255);
+  transition: transform 0.1s ease-in-out;
+}
+
+.post-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+  .post-thumbnail {
+    width: 300px;
+    height: auto;
+  }
 }

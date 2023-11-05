@@ -1,26 +1,26 @@
 const posts = [
   {
-    title: "Post 1",
+    title: "The Sun is Going To EXPLODE!?",
     href: "/posts/post-1/",
     date: "2023-11-01",
-    thumbnail: "/img/Logo.png",
+    thumbnail: "/img/sun-exploding-2.webp",
   },
   {
-    title: "Post 2",
+    title: "Blackholes",
     href: "/posts/post-2/",
     date: "2023-11-02",
-    thumbnail: "/img/Logo.png",
+    thumbnail: "/img/blackhole.jpg",
   },
   {
     title: "Post 3",
     href: "/posts/post-3/",
     date: "2023-11-03",
-    thumbnail: "/img/Logo.png",
+    thumbnail: "/img/sun-exploding.webp",
   },
 ];
 
 function generatePostList() {
-  const postList = document.getElementById("postList");
+  const postList = document.getElementById("post-list");
 
   if (postList) {
     // Clear any existing items in the list
@@ -35,12 +35,13 @@ function generatePostList() {
 
       anchor.href = post.href;
       thumbnail.src = post.thumbnail;
+      thumbnail.classList.add("post-thumbnail");
       title.textContent = post.title;
       date.textContent = `Date: ${post.date}`;
 
-      anchor.appendChild(thumbnail);
       anchor.appendChild(title);
       anchor.appendChild(date);
+      anchor.appendChild(thumbnail);
       listItem.appendChild(anchor);
 
       postList.appendChild(listItem);
