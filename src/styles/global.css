@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap'); /*   font-family: 'Space Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');/*   font-family: 'Space Mono', monospace; */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap'); /* font-family: 'Rubik Mono One', monospace; */
-
-
-
-
 
 
 html {
@@ -38,8 +34,7 @@ h1 {
 }
 
 p {
-  text-shadow: 2px 2px 2px black;
-  color :rgb(252, 216, 255);
+  text-shadow: 1px 1px 1px black;
   font-size: 20px;
   line-height: 200%;
 }

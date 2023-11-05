@@ -3,7 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
-const pageTitle = "🧑‍🏫 About Me";
+const pageTitle = "About Me";
 
 const identity = {
   firstName: "Cody",
@@ -12,15 +12,19 @@ const identity = {
   hobbies: ["3D Animation", "Web-design", "Gaming"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Java",
+  "C++",
+  "SQL",
+  "Comedy (see above)",
+];
 
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const skillColor = "navy";
+const skillColor = "#6f3ab0";
 const fontWeight = "bold";
-const textCase = "uppercase";
+const textCase = "capitalize";
 ---
 
 <html lang="en">
@@ -33,13 +37,32 @@ const textCase = "uppercase";
 
     <style define:vars={{ skillColor, fontWeight, textCase }}>
       h1 {
-        color: purple;
+        color: #7838c7;
         font-size: 4rem;
       }
       .skill {
         color: var(--skillColor);
         font-weight: var(--fontWeight);
         text-transform: var(--textCase);
+      }
+      a {
+        font-weight: bold;
+      }
+
+      .clickable-text {
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .clickable-text:hover {
+        color: var(--skillColor); /* Change the color on hover */
+      }
+
+      .joke {
+        color: white;
+        font-size: 14px;
+        font-style: italic;
+        padding-bottom: 20px;
       }
     </style>
   </head>
@@ -48,8 +71,20 @@ const textCase = "uppercase";
 
     <h1>{pageTitle}</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ab
-      recusandae beatae itaque animi laboriosam.
+      I'm a student at Eastern Washington University. I enjoy learning new
+      frameworks so I decided to make an <a>Astro</a> website about
+      <a>Astro</a>nomy! Get it?
+      <a id="toggleText" class="clickable-text">(Explanation provided here)</a>
+    </p>
+    <p class="joke" id="detailedExplanation" style="display: none;">
+      Here we have a charming blend of linguistic serendipity. When the jest
+      playfully announces, "I decided to make an Astro website about Astronomy,"
+      it's a whimsical twist that exaggerates the obvious connection between
+      "Astro" and "astronomy." The magic of the joke rests upon the delightful
+      overlap between "astro" which serves as the prefix for all things astral,
+      Simultaneously, in the realm of technology, "Astro" is akin to the
+      scaffolding that supports the architecture of web development—otherwise
+      known as a "framework."
     </p>
 
     <ul>
@@ -66,26 +101,13 @@ const textCase = "uppercase";
         )
       }
     </ul>
-    <p>My skills are:</p>
+    <p>Some of my skills are:</p>
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
 
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-
     <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
+
+    <script src="../scripts/toggleText.js"></script>
   </body>
 </html>
