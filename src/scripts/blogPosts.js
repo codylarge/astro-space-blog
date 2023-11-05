@@ -3,19 +3,19 @@ const posts = [
     title: "The Sun is Going To EXPLODE!?",
     href: "/posts/post-1/",
     date: "2023-11-01",
-    thumbnail: "/public/sun-exploding-2.webp",
+    thumbnail: "/sun-exploding-2.webp",
   },
   {
     title: "Blackholes",
     href: "/posts/post-2/",
     date: "2023-11-02",
-    thumbnail: "/public/blackhole.jpg",
+    thumbnail: "/blackhole.jpg",
   },
   {
     title: "Post 3",
     href: "/posts/post-3/",
     date: "2023-11-03",
-    thumbnail: "/public/sun-exploding.webp",
+    thumbnail: "/sun-exploding.webp",
   },
 ];
 
