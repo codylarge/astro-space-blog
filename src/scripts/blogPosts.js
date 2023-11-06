@@ -6,16 +6,16 @@ const posts = [
     thumbnail: "/sun-exploding-2.webp",
   },
   {
-    title: "Blackholes",
+    title: "Blackholes: ",
     href: "/posts/post-2/",
     date: "2023-11-02",
     thumbnail: "/blackhole.jpg",
   },
   {
-    title: "Post 3",
+    title: "Gravity: Force or Field?",
     href: "/posts/post-3/",
-    date: "2023-11-03",
-    thumbnail: "/sun-exploding.webp",
+    date: "2023-11-01",
+    thumbnail: "/earth-gravity.webp",
   },
 ];
 
@@ -34,9 +34,11 @@ function generatePostList() {
       const date = document.createElement("p");
 
       anchor.href = post.href;
+      anchor.classList.add("blog-title");
       thumbnail.src = post.thumbnail;
       thumbnail.classList.add("post-thumbnail");
       title.textContent = post.title;
+      title.classList.add("blog-title");
       date.textContent = `Date: ${post.date}`;
 
       anchor.appendChild(title);

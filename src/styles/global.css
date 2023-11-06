@@ -53,15 +53,16 @@ a{
   color :rgb(252, 216, 255);
 }
 
-a:hover{
-  color: purple;
+
+  .blog-title:hover{
+  color: #5f2aa0;
 }
 
 .post-thumbnail {
   width: 600px;
   height: auto;
-  border: 2px solid rgba(252, 216, 255, .3);
-  border-radius: 5px;
+  border: 0px solid rgba(252, 216, 255, .1);
+  border-radius: 10px;
   transition: transform 0.1s ease-in-out;
 }
 
@@ -75,5 +76,8 @@ a:hover{
   .post-thumbnail {
     width: 300px;
     height: auto;
+  }
+  .blog-title {
+    font-size: 1.2rem;
   }
 }
