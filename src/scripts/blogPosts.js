@@ -1,19 +1,19 @@
 const posts = [
   {
     title: "The Sun is Going To EXPLODE!?",
-    href: "/posts/post-1/",
+    href: "/posts/post-one.md",
     date: "2023-11-01",
     thumbnail: "/sun-exploding-2.webp",
   },
   {
     title: "Blackholes: ",
-    href: "/posts/post-2/",
+    href: "/posts/post-two.md",
     date: "2023-11-02",
-    thumbnail: "/blackhole.jpg",
+    thumbnail: "./blackhole.jpg",
   },
   {
     title: "Gravity: Force or Field?",
-    href: "/posts/post-3/",
+    href: "/posts/post-three.md",
     date: "2023-11-01",
     thumbnail: "/earth-gravity.webp",
   },
