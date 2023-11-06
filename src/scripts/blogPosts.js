@@ -9,7 +9,7 @@ const posts = [
     title: "Blackholes: ",
     href: "/posts/post-two.md",
     date: "2023-11-02",
-    thumbnail: "./blackhole.jpg",
+    thumbnail: "/blackhole.jpg",
   },
   {
     title: "Gravity: Force or Field?",

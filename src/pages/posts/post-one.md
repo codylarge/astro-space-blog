@@ -25,6 +25,12 @@ Following the red giant phase, the Sun will shed its outer layers, forming a **p
     <img src="/crab-nebula-xray.jpg" alt="Crab Nebula X-ray" width="350" height="350">
   </a>
 </div>
+<p style="font-size: 16px;">
+A nebula is a vast cloud of dust, hydrogen, helium, and other ionized gases scattered throughout space, often they are the remnants of dead stars. These clouds act as stellar nurseries, where new stars are born. The Crab Nebula, also known as Messier 1, was formed from the remnants of a supernova explosion observed by Chinese astronomers in 1054 AD. The Crab Nebula is expanding at a rate of about 1,500 kilometers per second. It emits radiation across the electromagnetic spectrum, making it a prominent source of energy visible to telescopes. This image in particular was assembled from 24 individual telescopes over 20 years ago.
+
+The center of
+
+</p>
 
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 
