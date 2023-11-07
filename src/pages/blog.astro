@@ -7,17 +7,47 @@ const pageTitle = "🌌 Blog 🌠";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+  <!-- Fix dynamic generation in blogPosts.js -->
   <ul>
-    <h2>Post 1</h2>
+    <h2 class="blog-title">The Sun is EXPLODING 😱</h2>
+    <p class="date">2022-07-03</p>
     <li>
-      <a href="/posts/post-one/">
-        <img src="/sun-exploding.webp" alt="Post 1" />
+      <a href="/posts/post-one/" class="blog-title">
+        <img
+          src="/sun-exploding.webp"
+          alt="Post 1"
+          width="90%"
+          class="post-thumbnail"
+        />
       </a>
     </li>
-    <li><a href="/posts/post-two/">Post 2</a></li>
-    <li><a href="/posts/post-three/">Post 3</a></li>
+
+    <h2 class="blog-title">Blackholes: The End of Time?</h2>
+    <p class="date">2022-07-02</p>
+    <li>
+      <a href="/posts/post-two/" class="blog-title">
+        <img
+          src="/blackhole.jpg"
+          alt="Post 2"
+          width="90%"
+          class="post-thumbnail"
+        />
+      </a>
+    </li>
+
+    <h2 class="blog-title">Gravity: Force or Field?</h2>
+    <p class="date">2022-07-01</p>
+    <li>
+      <a href="/posts/post-three/" class="blog-title">
+        <img
+          src="/earth-gravity.webp"
+          alt="Post 1"
+          width="90%"
+          class="post-thumbnail"
+        />
+      </a>
+    </li>
   </ul>
-  <ul id="post-list"></ul>
 </BaseLayout>
 <Footer />
 
@@ -26,5 +56,9 @@ const pageTitle = "🌌 Blog 🌠";
   h1 {
     padding-bottom: 0px;
     margin-bottom: 0px;
+  }
+
+  h2 {
+    padding-top: 5%;
   }
 </style>
