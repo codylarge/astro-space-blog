@@ -14,7 +14,7 @@ In a _measly_ 5 billion years, the Sun will enter a transformative phase as it e
 
 Following the red giant phase, the Sun will shed its outer layers, forming a **planetary nebula,** while the core left behind will collapse into a dense, Earth-sized object known as a white dwarf.
 
-## This is the a planetary nebula located just 6500 light years from earth
+## This is a nebula located just 6500 light years from earth
 
 <h3 style="text-align:center;">Crab Nebula</h3>
 <div style="text-align:center;">
@@ -25,19 +25,18 @@ Following the red giant phase, the Sun will shed its outer layers, forming a **p
     <img src="/crab-nebula-xray.jpg" alt="Crab Nebula X-ray" width="350" height="350">
   </a>
 </div>
-<p style="font-size: 16px;">
-A nebula is a vast cloud of dust, hydrogen, helium, and other ionized gases scattered throughout space, often they are the remnants of dead stars. These clouds act as stellar nurseries, where new stars are born. The Crab Nebula, also known as Messier 1, was formed from the remnants of a supernova explosion observed by Chinese astronomers in 1054 AD. The Crab Nebula is expanding at a rate of about 1,500 kilometers per second. It emits radiation across the electromagnetic spectrum, making it a prominent source of energy visible to telescopes. This image in particular was assembled from 24 individual telescopes over 20 years ago.
-
-The center of
-
+<p style="font-size: 16px; padding-bottom: 3%;">
+A nebula is a vast cloud of dust, hydrogen, helium, and other ionized gases scattered throughout space. These clouds act as stellar nurseries, where new stars are born. The Crab Nebula, also known as Messier 1, was formed from the remnants of a supernova explosion observed by Chinese astronomers in 1054 AD and is expanding at a rate of about 1,500 kilometers per second.
+<br><br>
+At the center of this nebula sits a <span style="font-weight: bold;">Neutron star</span> known as the densest objects in the universe. Formed under extreme conditions, this star is just 15 miles wide but weighs more than our Sun. It spins super fast, rotating 30 times per second! This spinning creates a magnetic field trillions of times stronger than Earth's. The mix of particles, radiation, and this strong magnetic field makes the beautiful patterns we see in nebulas like the Crab Nebula.
 </p>
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+### Heres A visualization to help comprehend the size comparison between a neutron star and the sun
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+<video width="640" height="360" controls>
+  <source src="/sun-vs-neutronstar.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p style="font-size: 16px;">
+Despite the sun being 55,000x larger, the neutron star would still have an incredibly strong gravitational pull on it. Just a teaspoon of its material would weigh MILLIONS of TONS on earth!
+</p>
