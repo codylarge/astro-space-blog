@@ -1,6 +1,6 @@
 ---
-import Footer from "../components/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Footer from "../components/Footer.astro";
 import SpaceFacts from "../components/SpaceFacts.astro";
 import "../styles/global.css";
 const pageTitle = "A Space Blog 👽";
@@ -20,3 +20,14 @@ const pageTitle = "A Space Blog 👽";
   </div>
 </BaseLayout>
 <Footer />
+
+<style>
+  h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    padding-top: 5%;
+  }
+</style>
