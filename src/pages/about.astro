@@ -1,7 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Footer from "../components/Footer.astro";
-import "../styles/global.css";
 
 const pageTitle = "About Me";
 
@@ -19,42 +17,43 @@ const fontWeight = "bold";
 const textCase = "capitalize";
 ---
 
-<BaseLayout pageTitle={pageTitle} />
-<p>
-  I'm a student at Eastern Washington University. I enjoy learning new
-  frameworks so I decided to make an <a>Astro</a> website about
-  <a>Astro</a>nomy! Get it?
-  <a id="toggleText" class="clickable-text">(Explanation provided here)</a>
-</p>
-<p class="joke" id="detailedExplanation" style="display: none;">
-  Here we have a charming blend of linguistic serendipity. When the jest
-  playfully announces, "I decided to make an Astro website about Astronomy,"
-  it's a whimsical twist that exaggerates the obvious connection between "Astro"
-  and "astronomy." The magic of the joke rests upon the delightful overlap
-  between "astro" which serves as the prefix for all things astral,
-  Simultaneously, in the realm of technology, "Astro" is akin to the scaffolding
-  that supports the architecture of web development—otherwise known as a
-  "framework."
-</p>
+<BaseLayout pageTitle={pageTitle}>
+  <p>
+    I'm a student at Eastern Washington University. I enjoy learning new
+    frameworks so I decided to make an <a>Astro</a> website about
+    <a>Astro</a>nomy! Get it?
+    <a id="toggleText" class="clickable-text">(Explanation provided here)</a>
+  </p>
+  <p class="joke" id="detailedExplanation" style="display: none;">
+    Here we have a charming blend of linguistic serendipity. When the jest
+    playfully announces, "I decided to make an Astro website about Astronomy,"
+    it's a whimsical twist that exaggerates the obvious connection between
+    "Astro" and "astronomy." The magic of the joke rests upon the delightful
+    overlap between "astro" which serves as the prefix for all things astral,
+    Simultaneously, in the realm of technology, "Astro" is akin to the
+    scaffolding that supports the architecture of web development—otherwise
+    known as a "framework."
+  </p>
 
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>
-    I live in {identity.country} and I'm currently a {identity.occupation}.
-  </li>
-  {
-    identity.hobbies.length >= 2 && (
-      <li>
-        Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-      </li>
-    )
-  }
-</ul>
-<p>Some of my sskills are:</p>
-<ul>
-  {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
-<Footer />
+  <ul>
+    <li>My name is {identity.firstName}.</li>
+    <li>
+      I live in {identity.country} and I'm currently a {identity.occupation}.
+    </li>
+    {
+      identity.hobbies.length >= 2 && (
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+        </li>
+      )
+    }
+  </ul>
+  <p>Some of my skills are:</p>
+  <ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
+</BaseLayout>
+
 <style define:vars={{ skillColor, fontWeight, textCase }}>
   h1 {
     color: #7838c7;

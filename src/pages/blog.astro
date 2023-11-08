@@ -1,13 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Footer from "../components/Footer.astro";
-import "../styles/global.css";
 
 const pageTitle = "🌌 Blog 🌠";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <!-- Fix dynamic generation in blogPosts.js -->
+  <!-- Fix dynamic generation in blogPosts.js ASAP-->
   <ul>
     <h2 class="blog-title">The Sun is EXPLODING 😱</h2>
     <p class="date">2022-07-03</p>
@@ -49,7 +47,6 @@ const pageTitle = "🌌 Blog 🌠";
     </li>
   </ul>
 </BaseLayout>
-<Footer />
 
 <script src="../scripts/blogPosts.js"></script>
 <style>
