@@ -1,0 +1,51 @@
+---
+const astroPosts = [
+  {
+    title: "The Sun is EXPLODING 😱",
+    date: "2022-07-03",
+    imageSrc: "/sun-exploding.webp",
+    altText: "Post 1",
+    link: "/posts/post-one/",
+  },
+  {
+    title: "Black Holes: The End of Time?",
+    date: "2022-07-02",
+    imageSrc: "/blackhole.jpg",
+    altText: "Post 2",
+    link: "/posts/post-two/",
+  },
+  {
+    title: "Gravity: Force or Field?",
+    date: "2022-07-01",
+    imageSrc: "/earth-gravity.webp",
+    altText: "Post 3",
+    link: "/posts/post-three/",
+  },
+];
+---
+
+<ul>
+  {
+    astroPosts.map((post, index) => (
+      <li class="blog">
+        <h2 class="blog-title">{post.title}</h2>
+        <p class="date">{post.date}</p>
+        <a href={post.link} class="blog-title">
+          <img
+            src={post.imageSrc}
+            alt={post.altText}
+            width="90%"
+            class="post-thumbnail"
+          />
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+</style>
