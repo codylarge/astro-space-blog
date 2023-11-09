@@ -46,37 +46,3 @@ p {
 }
 
 
-/* BLOG STYLES (they arent working in the file for some reason) */
-a{
-  text-decoration: none;
-  color :rgb(252, 216, 255);
-}
-
-
-  .blog-title:hover{
-  color: #5f2aa0;
-}
-
-.post-thumbnail {
-  width: 600px;
-  height: auto;
-  border: 0px solid rgba(252, 216, 255, .1);
-  border-radius: 10px;
-  transition: transform 0.1s ease-in-out;
-}
-
-.post-thumbnail:hover {
-  transform: scale(1.1);
-  box-shadow: 2px 15px 15px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-@media screen and (max-width: 700px) {
-  .post-thumbnail {
-    width: 300px;
-    height: auto;
-  }
-  .blog-title {
-    font-size: 1.2rem;
-  }
-}

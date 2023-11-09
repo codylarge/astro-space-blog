@@ -28,7 +28,9 @@ const astroPosts = [
   {
     astroPosts.map((post, index) => (
       <li class="blog">
-        <h2 class="blog-title">{post.title}</h2>
+        <a href={post.link} class="blog-title">
+          <h2 class="blog-title">{post.title}</h2>
+        </a>
         <p class="date">{post.date}</p>
         <a href={post.link} class="blog-title">
           <img
@@ -47,5 +49,38 @@ const astroPosts = [
   h1 {
     padding-bottom: 0px;
     margin-bottom: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(252, 216, 255);
+  }
+
+  .blog-title:hover {
+    color: #5f2aa0;
+    cursor: pointer;
+  }
+
+  .post-thumbnail {
+    width: 600px;
+    height: auto;
+    border: 0px solid rgba(252, 216, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .post-thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 15px 15px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  @media screen and (max-width: 700px) {
+    .post-thumbnail {
+      width: 300px;
+      height: auto;
+    }
+    .blog-title {
+      font-size: 1.2rem;
+    }
   }
 </style>

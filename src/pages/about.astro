@@ -53,35 +53,35 @@ const textCase = "capitalize";
   <ul>
     {skills.map((skill) => <li class="skill">{skill}</li>)}
   </ul>
+
+  <style define:vars={{ skillColor, fontWeight, textCase }}>
+    .skill {
+      color: var(--skillColor);
+      font-weight: var(--fontWeight);
+      text-transform: var(--textCase);
+    }
+    a {
+      font-weight: bold;
+      font-style: italic;
+      color: white;
+    }
+
+    .clickable-text {
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .clickable-text:hover {
+      color: var(--skillColor); /* Change the color on hover */
+    }
+
+    .joke {
+      color: white;
+      font-size: 14px;
+      font-style: italic;
+      padding-bottom: 20px;
+    }
+  </style>
 </BaseLayout>
-
-<style define:vars={{ skillColor, fontWeight, textCase }}>
-  .skill {
-    color: var(--skillColor);
-    font-weight: var(--fontWeight);
-    text-transform: var(--textCase);
-  }
-  a {
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-  }
-
-  .clickable-text {
-    font-size: 14px;
-    cursor: pointer;
-  }
-
-  .clickable-text:hover {
-    color: var(--skillColor); /* Change the color on hover */
-  }
-
-  .joke {
-    color: white;
-    font-size: 14px;
-    font-style: italic;
-    padding-bottom: 20px;
-  }
-</style>
 
 <script src="../scripts/toggleText.js"></script>
